@@ -60,13 +60,14 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <p class="m-b-10 f-w-600">Address</p>
-                                        <h6 class="text-muted f-w-400">{{user_profile_info.union}},{{user_profile_info.thana}},{{user_profile_info.city}}</h6>
+                                        <h6 class="text-muted f-w-400">{{user_profile_info.city}}</h6>
                                     </div>
                                 </div>
                                 <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Others Informations.</h6>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <form action="" method="post">
+                                            {% csrf_token %}
                                             <div class="col-sm-6 col-md-6 col-lg-6">
                                                 <input type="text" name="donate_date" placeholder="Last Donate Date" class="form-control p-1 pl-3" id="inputfname" autofocus/>
                                             </div>

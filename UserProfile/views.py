@@ -62,8 +62,6 @@ def registrations(request):
         bloodGroup = request.POST.get('bloodGroup')
         gender = request.POST.get('gender')
         city = request.POST.get('city')
-        thana = request.POST.get('thana')
-        union = request.POST.get('union')
         postCode = request.POST.get('postCode')
         # bio=" "
 
@@ -89,8 +87,6 @@ def registrations(request):
                               bloodGroup=bloodGroup,
                               gender=gender,
                               city=city,
-                              thana=thana,
-                              union=union,
                               postCode=postCode,
         )
         profile.save()

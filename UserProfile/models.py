@@ -15,8 +15,6 @@ class UserProfile(models.Model):
     bloodGroup=CharField(max_length=20)
     gender=CharField(max_length=20)
     city=CharField(max_length=30)
-    thana=CharField(max_length=30)
-    union=CharField(max_length=30)
     postCode=CharField(max_length=20)
     otp=models.CharField(max_length=30)
     published = models.BooleanField(default=True)
